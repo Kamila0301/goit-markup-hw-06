@@ -755,12 +755,11 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  min-height: 576px;
+  max-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
 }
 
 .modal-title {
@@ -922,6 +921,7 @@ img {
 }
 
 .input-check {
+  color: #fcfcfc;
 }
 
 .input-check:checked + .check-text span {
@@ -969,6 +969,13 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #fcfcfc;
+  padding-left: 16px;
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 
 .footer-email::placeholder {
@@ -977,8 +984,12 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-  padding-top: 8px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.sub {
+  display: flex;
 }
 
 .subscribe {
@@ -1001,6 +1012,6 @@ img {
   cursor: pointer;
 }
 
-.icon-Frame::after {
+.frame-icon {
   color: #ffffff;
 }
